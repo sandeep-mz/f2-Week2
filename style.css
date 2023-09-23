@@ -12,12 +12,15 @@ body {
     margin: 0;
 }
 
-header {
+.header{
     background-color: rgba(0, 0, 0, 1);
     color: #fff;
     text-align: left;
     padding: 1px;
     margin-bottom: 20px;
+    position: sticky;
+    top: 0; 
+    z-index: 100; 
 }
 
 #header-text {
@@ -110,4 +113,52 @@ th, td {
     height: 30px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+/* Small screens (mobile phones) */
+@media screen and (max-width: 767px) {
+    /* Adjust styles for small screens here */
+    body {
+        font-size: 16px;
+    }
+
+    .search-bar {
+        font-size: 16px;
+    }
+    .button-container{
+        font-size: 16px;
+    }
+    /* Add other styles for small screens here */
+}
+
+
+
+
+
+/* Medium screens (tablets) */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Adjust styles for medium screens here */
+    body {
+        font-size: 18px;
+    }
+
+    .search-bar {
+        font-size: 18px;
+    }
+
+    /* Add other styles for medium screens here */
+}
+
+/* Large screens (desktops) */
+@media screen and (min-width: 992px) {
+    /* Adjust styles for large screens here */
+    body {
+        font-size: 20px;
+    }
+
+    .search-bar {
+        font-size: 20px;
+    }
+
+    /* Add other styles for large screens here */
 }
